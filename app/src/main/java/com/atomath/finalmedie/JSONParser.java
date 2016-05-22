@@ -25,7 +25,6 @@ public class JSONParser {
     public JSONParser() {
 
     }
-
     public JSONArray getJSONFromUrl(String url) {
         StringBuilder builder = new StringBuilder();
         HttpClient client = new DefaultHttpClient();
