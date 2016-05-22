@@ -113,5 +113,6 @@ public class XMLFragment extends Fragment {
             listview.setAdapter(new ListViewAdapter(getActivity(),new ArrayList<HashMap<String, String>>(s)));
         }
 
+
     }
 }
