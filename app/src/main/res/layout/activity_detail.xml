@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.atomath.finalmedie.DetailActivity">
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#77FFFFFF"
+        android:paddingRight="24dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img_link"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="3dp"
+            android:scaleType="fitStart"
+            />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_link"
+            android:gravity="center_vertical"
+            android:text="Loading.."
+            android:textColor="#333333"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/img_link"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dip"
+            android:text="Description"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_youtube"
+        android:layout_below="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="180sp"
+        android:padding="4dip"
+        android:scaleType="centerCrop"
+        />
+</RelativeLayout>
